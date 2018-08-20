@@ -1,0 +1,24 @@
+<div class="side-page">
+    <mat-nav-list>
+        <mat-list-item>  
+          <h3>项目列表</h3> 
+          <mat-icon matListIcon style="color: #ffffff">folder</mat-icon>
+        </mat-list-item>
+        <mat-list-item>  
+            <h3>日历视图</h3> 
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon md-list-icon svgIcon="month"></mat-icon>  
+          <span>月视图</span>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon md-list-icon svgIcon="week"></mat-icon>     
+          <span>周视图</span> 
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon md-list-icon [svgIcon]="today"></mat-icon>
+          <span>日视图</span>
+        </mat-list-item>
+       </mat-nav-list>
+</div>
+

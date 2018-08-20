@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-drawer-container class="app-page">
+  <!-- sidenav -->
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>     
+  <div class="app-page">
+  <!-- header -->
+    <header>
+      <span class="logo" (click)="drawer.toggle()">
+          <mat-icon>home</mat-icon>
+      </span>
+      <app-header></app-header>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- router -->
+      <router-outlet></router-outlet>
+    </main>
+    <!-- footer -->
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+</div>      
+</mat-drawer-container>
