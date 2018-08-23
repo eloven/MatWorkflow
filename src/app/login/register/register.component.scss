@@ -1,0 +1,21 @@
+.login-page{
+    display: flex;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+    align-items: center;
+    mat-card{
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        width: 100%;
+        mat-card-content{
+            width: 25%;
+            margin: 0 auto;
+            .submit-button{
+                width: 100%;
+            }
+        }
+    }
+}

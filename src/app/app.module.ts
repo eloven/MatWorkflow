@@ -11,6 +11,8 @@ import { ShareModule } from './share/share.module';
 // Mat侧边栏模块
 import { MatSidenavModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
+import { TaskModule } from './task/task.module';
+import { ProjectModule } from './project/project.module';
 
 @NgModule({
 declarations: [
@@ -23,7 +25,9 @@ declarations: [
     CoreModule,
     ShareModule,
     MatSidenavModule,
-    HttpClientModule
+    HttpClientModule,
+    TaskModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
