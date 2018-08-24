@@ -1,6 +1,10 @@
 <div class="tasklist">
-  <app-task-list>
+  <!-- app-task-list通过ng-content指令扩展 -->
+  <app-task-list
+  *ngFor="let list of lists">
     <app-task-header></app-task-header>
-    <app-task-item></app-task-item>
+    <app-task-item
+    *ngFor="let item of list">
+    </app-task-item>
   </app-task-list>
 </div>

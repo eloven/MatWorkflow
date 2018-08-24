@@ -7,12 +7,19 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
   styleUrls: ['./new-project.component.scss']
 })
 export class NewProjectComponent implements OnInit {
-
+  form: FormGroup;
+  dialogTitle;
   constructor(
     public dialogRef: MatDialogRef<NewProjectComponent>,
-    @Inject(MAT_DIALOG_DATA) public data) { }
+    @Inject(MAT_DIALOG_DATA) public data,
+    private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.form = this.fb.group({
+      projectName: [Validators.maxLength(120)],
+      projectDesc: [Validators.minLength(1)]
+    });
+    this.dialogTitle = '新建项目';
     // 接收openDialog传过来的数据
     console.log(JSON.stringify(this.data));
   }

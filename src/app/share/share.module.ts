@@ -25,6 +25,7 @@ import {
   MatTooltipModule,
   MatSlideToggleModule,
 } from '@angular/material';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   imports: [
@@ -54,7 +55,7 @@ import {
     MatTooltipModule,
     MatSlideToggleModule
   ],
-  declarations: [],
+  declarations: [ConfirmDialogComponent],
   exports: [
     CommonModule,
     ReactiveFormsModule,

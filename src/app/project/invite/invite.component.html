@@ -1,3 +1,7 @@
-<p>
-  invite works!
-</p>
+<form>
+    <mat-card-title>
+        {{groupPerson.title}}
+      </mat-card-title>
+      <button mat-button (click)="handleAction(true)">确定</button>
+      <button mat-button (click)="handleAction(false)">取消</button>
+</form>

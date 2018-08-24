@@ -1,3 +1,18 @@
-<p>
-  task-header works!
-</p>
+<div class="task-header">
+  <div class="content">
+    <button mat-button>
+        <span>待办任务</span>
+    </button>
+  </div>
+  <div class="content">
+    <button mat-button (click)="openNewTask()">
+        <mat-icon>add_circle_outline</mat-icon>
+        <span>新任务</span>
+    </button>
+  </div>
+  <div class="content">
+      <button mat-button>
+          <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+  </div>
+</div>

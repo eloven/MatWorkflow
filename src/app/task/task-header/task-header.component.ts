@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { NewTaskComponent } from '../new-task/new-task.component';
 
 @Component({
   selector: 'app-task-header',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private matdialog: MatDialog) { }
 
   ngOnInit() {
   }
-
+  openNewTask() {
+    const dialogRef = this.matdialog.open(NewTaskComponent, {data: '打开new-task'});
+    dialogRef.afterClosed().subscribe( (res) => {
+      console.log(res);
+    });
+  }
 }
