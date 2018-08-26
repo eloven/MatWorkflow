@@ -4,7 +4,8 @@
   *ngFor="let list of lists">
     <app-task-header></app-task-header>
     <app-task-item
-    *ngFor="let item of list">
+    *ngFor="let item of list"
+    [projectItem]="item">
     </app-task-item>
   </app-task-list>
 </div>

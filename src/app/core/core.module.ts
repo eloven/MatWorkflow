@@ -8,7 +8,7 @@ import { ShareModule } from '../share/share.module';
 // Mat Icon
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
-import { loadSvgResources } from '../utills/svg.utills';
+import { loadSvgResources } from '../utils/svg.utils';
 
 @NgModule({
   imports: [

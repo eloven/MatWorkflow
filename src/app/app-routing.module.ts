@@ -5,7 +5,7 @@ import { ProjectListComponent } from './project/project-list/project-list.compon
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'user', pathMatch: 'full'},
+  {path: '', redirectTo: 'task', pathMatch: 'full'},
   // 路由懒加载，独立模块路由
   {path: 'user', loadChildren: '../app/login/login.module#LoginModule'},
   {path: 'task', component: TaskHomeComponent},

@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-home.component.scss']
 })
 export class TaskHomeComponent implements OnInit {
-  lists = [[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]];
+  // mock项目列表数据
+  lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]];
   constructor() { }
 
   ngOnInit() {

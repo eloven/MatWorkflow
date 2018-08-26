@@ -26,14 +26,10 @@
         </mat-grid-list>
         <div class="submit-button">
           <button mat-button mat-mini-fab>确定</button>
-          <button mat-button mat-mini-fab>取消</button>
+          <button mat-button mat-mini-fab (click)="doCancle()">取消</button>
         </div>
       </form>
     </mat-card-content>
-    <mat-card-actions>
-      <p>还没有账户？<a [routerLink]="[ '../register']">马上注册</a></p>
-      <p>忘记密码? <a [routerLink]="[ '../forgot']">找回密码</a></p>
-    </mat-card-actions>
   </mat-card>
 </div>
 
