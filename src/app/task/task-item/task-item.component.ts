@@ -11,7 +11,7 @@ export class TaskItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.projectItem);
+    // console.log(this.projectItem);
   }
 
 }

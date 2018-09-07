@@ -13,11 +13,10 @@ import { MatSidenavModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskModule } from './task/task.module';
 import { ProjectModule } from './project/project.module';
-
 @NgModule({
-declarations: [
-    AppComponent
-  ],
+    declarations: [
+    AppComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +26,7 @@ declarations: [
     MatSidenavModule,
     HttpClientModule,
     TaskModule,
-    ProjectModule
+    ProjectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

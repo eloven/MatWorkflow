@@ -12,5 +12,20 @@ export class TaskHomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  // 处理dropped事件
+  handleMove(srcData, listData) {
+    switch (srcData.tag) {
+      case 'task-item': {
+        console.log('task-item');
+        break;
+      }
+      case 'task-list': {
+        console.log('task-list');
+        // this.store$.dispatch(new listActions.SwapOrderAction({src: srcData.data, target: taskList}));
+        break;
+      }
+      default:
+        break;
+    }
+  }
 }

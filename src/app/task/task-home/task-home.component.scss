@@ -12,5 +12,12 @@
         margin-right: 5px;
         border-right: 1px solid #f1f1f1;
         border-left: 1px solid #f1f1f1;
+        &.drag-start {
+            opacity: 0.5;
+            border: #ff525b dashed 2px;
+        }
+        &.drop{
+            border: #5e52ff dashed 2px;
+        }
     }
 }

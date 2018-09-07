@@ -26,7 +26,7 @@ import {
   MatSlideToggleModule,
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
-
+import { DireactiveModule } from '../directive/direactive.module';
 @NgModule({
   imports: [
     CommonModule,
@@ -53,9 +53,12 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatSelectModule,
     MatTabsModule,
     MatTooltipModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    DireactiveModule,
   ],
-  declarations: [ConfirmDialogComponent],
+  declarations: [
+    ConfirmDialogComponent,
+  ],
   exports: [
     CommonModule,
     ReactiveFormsModule,
@@ -81,7 +84,8 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatSelectModule,
     MatTabsModule,
     MatTooltipModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    DireactiveModule,
   ]
 })
 export class ShareModule { }

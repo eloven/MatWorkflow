@@ -15,7 +15,12 @@ import { loadSvgResources } from '../utils/svg.utils';
     ShareModule,
   ],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent]
+  exports: [HeaderComponent, FooterComponent, SidebarComponent],
+  providers: [
+    {provide: 'BASE_API', useValue: {
+      host: 'http://127.0.0.1:3000'
+    }}
+  ]
 })
 export class CoreModule {
   constructor (

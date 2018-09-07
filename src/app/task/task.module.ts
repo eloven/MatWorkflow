@@ -8,14 +8,15 @@ import { NewTaskComponent } from './new-task/new-task.component';
 
 @NgModule({
   imports: [
-    ShareModule
+    ShareModule,
   ],
   declarations: [
     TaskHomeComponent,
     TaskListComponent,
     TaskItemComponent,
     TaskHeaderComponent,
-    NewTaskComponent],
+    NewTaskComponent,
+  ],
   exports: [
     TaskHomeComponent,
     TaskListComponent,
