@@ -1,4 +1,11 @@
-<mat-list-item>
+<mat-list-item 
+[appDraggable] = "true"
+[draggedClass] = "'drag-start'"
+[dragTag] = "'taskitem'"
+[dragData] = "projectItem"
+[dropTags]= "['tasklist', 'taskitem']"
+[dragEnterClass]= "'drag-enter'"
+(dropped)="handleMove($event, projectItem)">
     <mat-radio-group>
         <mat-checkbox  [(ngModel)]="checked"></mat-checkbox>
     </mat-radio-group>

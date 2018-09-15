@@ -2,13 +2,12 @@
   <!-- app-task-list通过ng-content指令扩展 -->
   <app-task-list
   *ngFor="let list of lists"
-  app-droppable
   [appDraggable] = "true"
   [draggedClass] = "'drag-start'"
   [dragTag] = "'tasklist'"
   [dragData] = "list"
   [dropTags]= "['tasklist', 'taskitem']"
-  [dragEnterClass]= "'drop'"
+  [dragEnterClass]= "'drag-enter'"
   (dropped)="handleMove($event, list)"
   >
     <app-task-header></app-task-header>

@@ -15,12 +15,13 @@ export class TaskHomeComponent implements OnInit {
   // 处理dropped事件
   handleMove(srcData, listData) {
     switch (srcData.tag) {
-      case 'task-item': {
-        console.log('task-item');
+      case 'taskitem': {
+        console.log('taskitem');
         break;
       }
-      case 'task-list': {
-        console.log('task-list');
+      case 'tasklist': {
+        console.log('tasklist');
+        console.log(listData);
         // this.store$.dispatch(new listActions.SwapOrderAction({src: srcData.data, target: taskList}));
         break;
       }

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-
 export interface DragData {
   tag: string; // 用于标识该拖拽对象，在具有多个可拖拽的层级中标识该层级，需要用户自己维护唯一性
   data: any; // 要传递的数据
@@ -13,7 +12,6 @@ export interface DragData {
 export class DargDropService {
   //  BehaviorSubject 构造一个带记忆的数据对象
   private _dragData = new BehaviorSubject<DragData>(null);
-  constructor () {}
   // 这个服务有三个方法
   setDragData(data: DragData) {
     this._dragData.next(data);

@@ -19,14 +19,14 @@ export class DragDirective {
     // 通过输入属性设置
     this._isDraggble =  val;
     // 给dom设置 draggable 属性
-    this.rdt.setAttribute(this.el.nativeElement, 'draggable', `${val}`);
+    this.rd.setAttribute(this.el.nativeElement, 'draggable', `${val}`);
   }
   get isDraggable() {
     return this._isDraggble;
   }
   constructor(
      private el: ElementRef,
-     private rdt: Renderer2,
+     private rd: Renderer2,
      private dragService: DargDropService) { }
     //  事件监听  开始拖动
   @HostListener('dragstart', ['$event'])
@@ -35,8 +35,8 @@ export class DragDirective {
     // nativeElement == 原生dom;
     if (this.el.nativeElement === evt.target) {
       // 使用 Renderer2 操作dom
-      this.rdt.addClass(this.el.nativeElement, this.draggedClass);
-      console.log(this.dragTag);
+      this.rd.addClass(this.el.nativeElement, this.draggedClass);
+      // console.log(this.dragTag);
       // 拖动开始：存储数据对象
       this.dragService.setDragData({tag: this.dragTag, data: this.dragData});
     }
@@ -45,7 +45,7 @@ export class DragDirective {
   @HostListener('dragend', ['$event'])
   onDragEnd(ev: Event) {
     if (this.el.nativeElement === ev.target) {
-      this.rdt.removeClass(this.el.nativeElement, this.draggedClass);
+      this.rd.removeClass(this.el.nativeElement, this.draggedClass);
       // console.log('drag end');
     }
   }

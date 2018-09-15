@@ -14,10 +14,14 @@
         border-left: 1px solid #f1f1f1;
         &.drag-start {
             opacity: 0.5;
-            border: #ff525b dashed 2px;
+            border: #ff525b solid 1px;
         }
         &.drop{
-            border: #5e52ff dashed 2px;
+            border: #5e52ff solid 1px;
+        }
+        &.drag-enter{
+            border: 1px solid #0060f0;
+            background-color: rgba(0, 17, 7, 0.3);
         }
     }
 }
