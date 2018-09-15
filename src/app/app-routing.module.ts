@@ -9,7 +9,8 @@ const routes: Routes = [
   // 路由懒加载，独立模块路由
   {path: 'user', loadChildren: '../app/login/login.module#LoginModule'},
   {path: 'task', component: TaskHomeComponent},
-  {path: 'project', component: ProjectListComponent}
+  {path: 'project', component: ProjectListComponent},
+  {path: '**', redirectTo: 'user', pathMatch: 'full'}
 ];
 
 @NgModule({

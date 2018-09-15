@@ -10,6 +10,10 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
     ShareModule,
     LoginRoutingModule
   ],
-  declarations: [LoginComponent, RegisterComponent, ForgotpasswordComponent],
+  declarations: [
+    LoginComponent,
+    RegisterComponent,
+    ForgotpasswordComponent
+  ],
 })
 export class LoginModule { }
