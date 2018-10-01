@@ -1,8 +1,22 @@
-.header-page{
-    display: inline-flex;
-    overflow: hidden;
-    height: 60px;
-    h3{
-        color: #FFFFFF;
+:host{
+    width: 100%;
+    .header-page{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        height: 60px;
+        width: 100%;
+        position: relative;
+        h3{
+            color: #FFFFFF;
+        }
+        .right{
+            position: absolute;
+            right: 100px;
+        }
+        .right-t{
+            position: absolute;
+            right: 150px;
+        }
     }
 }

@@ -7,9 +7,9 @@ import { ProjectListComponent } from './project/project-list/project-list.compon
 const routes: Routes = [
   {path: '', redirectTo: 'task', pathMatch: 'full'},
   // 路由懒加载，独立模块路由
-  {path: 'user', loadChildren: '../app/login/login.module#LoginModule'},
-  {path: 'task', component: TaskHomeComponent},
-  {path: 'project', component: ProjectListComponent},
+  {path: 'user', loadChildren: '../app/login/login.module#LoginModule', data: { keep: false}},
+  {path: 'task', component: TaskHomeComponent, data: { keep: true}},
+  {path: 'project', component: ProjectListComponent, data: { keep: true}},
   {path: '**', redirectTo: 'user', pathMatch: 'full'}
 ];
 

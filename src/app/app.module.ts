@@ -13,6 +13,9 @@ import { MatSidenavModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskModule } from './task/task.module';
 import { ProjectModule } from './project/project.module';
+//  路由缓存
+import { RouteReuseStrategy} from '@angular/router';
+import { AppRoutingCache } from './app-routing.cache';
 @NgModule({
     declarations: [
     AppComponent,
@@ -28,7 +31,9 @@ import { ProjectModule } from './project/project.module';
     TaskModule,
     ProjectModule,
   ],
-  providers: [],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: AppRoutingCache }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
