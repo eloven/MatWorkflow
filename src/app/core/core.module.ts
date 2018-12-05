@@ -11,28 +11,30 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.utils';
 
 @NgModule({
-  imports: [
-    ShareModule,
-  ],
-  declarations: [HeaderComponent, FooterComponent, SidebarComponent],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent],
-  providers: [
-    {provide: 'BASE_API', useValue: {
-      host: 'http://127.0.0.1:3000'
-    }}
-  ]
+    imports: [
+        ShareModule,
+    ],
+    declarations: [HeaderComponent, FooterComponent, SidebarComponent],
+    exports: [HeaderComponent, FooterComponent, SidebarComponent],
+    providers: [
+        {
+            provide: 'BASE_API', useValue: {
+                host: 'http://127.0.0.1:3000'
+            }
+        }
+    ]
 })
 export class CoreModule {
-  constructor (
-    // 核心模块只加载一次
-    @Optional() @SkipSelf() parent: CoreModule,
-    // Icon 依赖注入
-    iconRegistry: MatIconRegistry,
-    sanitizer: DomSanitizer) {
-    if (parent) {
-      throw Error('模块已经存在');
+    constructor(
+        // 核心模块只加载一次
+        @Optional() @SkipSelf() parent: CoreModule,
+        // Icon 依赖注入
+        iconRegistry: MatIconRegistry,
+        sanitizer: DomSanitizer) {
+        if (parent) {
+            throw Error('模块已经存在');
+        }
+        // 加载icon的方法
+        loadSvgResources(iconRegistry, sanitizer);
     }
-    // 加载icon的方法
-    loadSvgResources(iconRegistry, sanitizer);
-  }
- }
+}
