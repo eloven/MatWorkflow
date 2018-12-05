@@ -1,31 +1,41 @@
 {
-  "name": "mat-work",
-  "version": "0.0.0",
+  "name": "work7",
+  "version": "7.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run work7:server:production",
+    "compile:server": "webpack --config webpack.server.config.js --progress",
+    "serve:ssr": "node dist/server"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^7.1.1",
-    "@angular/cdk": "^7.1.1",
+    "@angular/animations": "~7.1.0",
     "@angular/common": "~7.1.0",
     "@angular/compiler": "~7.1.0",
     "@angular/core": "~7.1.0",
     "@angular/forms": "~7.1.0",
-    "@angular/material": "^7.1.1",
+    "@angular/http": "~7.1.0",
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
+    "@angular/platform-server": "^7.1.1",
+    "@angular/pwa": "^0.11.1",
     "@angular/router": "~7.1.0",
-    "classlist.js": "^1.1.20150312",
+    "@angular/service-worker": "~7.1.0",
+    "@nguniversal/express-engine": "^7.0.2",
+    "@nguniversal/module-map-ngfactory-loader": "^v7.0.2",
     "core-js": "^2.5.4",
+    "domino": "^2.1.1",
+    "express": "^4.15.2",
     "rxjs": "~6.3.3",
+    "ts-loader": "^5.3.1",
     "tslib": "^1.9.0",
-    "web-animations-js": "^2.3.1",
+    "xhr2": "^0.1.4",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -45,8 +55,11 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
+    "ts-loader": "^5.2.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "~3.1.6",
+    "webpack-cli": "^3.1.0",
+    "webpack": "latest"
   }
 }
