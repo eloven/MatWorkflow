@@ -1,27 +1,62 @@
-# MatWork
+# Work7
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+> best prictice for angualr
 
-## Development server
+### MatWorkFlow For Angular ^7.1.0
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    material2 + angular7 + pwa + ssr + ngrx + websql + storage
 
-## Code scaffolding
+### Folder <Standard Folder Specification>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    '''
+        app
+            actions
+            api
+            componnents
+            config
+            controllers
+            core
+            database
+            effects
+            entities
+            functions
+            lib
+            models
+            pages
+            reducer
+            service
+            settings
+            shared
+            state
+            store
+            styles
+            test
+            tools
+            utils
+        app.component
+        app.routing.module
+        app.module
+        app.server.module
+    '''
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### How to use browser
 
-## Running unit tests
+    1. git clone
+    2. npm install
+    3. ng serve
+    4. ng build --prod
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### How to use ssr
 
-## Running end-to-end tests
+    1. npm i express
+    2. npm i webpack
+    3. npm run build:ssr
+    4. node dist/server.js
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### production
 
-## Further help
+    You need PM2 Manage node-app
+    [PM2](https://pm2.io/doc/en/runtime/guide/installation/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
