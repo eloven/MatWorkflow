@@ -6,7 +6,7 @@
 
     material2 + angular7 + pwa + ssr + ngrx + websql + storage
 
-### Folder <Standard Folder Specification>
+### Folder
 
     '''
         app
