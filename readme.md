@@ -10,25 +10,20 @@
 
     '''
         app
-            actions
             api
             componnents
             config
             controllers
             core
             database
-            effects
-            entities
             functions
             lib
             models
+            ngrx
             pages
-            reducer
             service
             settings
             shared
-            state
-            store
             styles
             test
             tools
@@ -55,8 +50,7 @@
     4. node dist/server.js
 
 ### production
-
-    You need PM2 Manage node-app
-    [PM2](https://pm2.io/doc/en/runtime/guide/installation/)
+##### You need PM2 Manage node-app
+[PM2](https://pm2.io/doc/en/runtime/guide/installation/)
 
 
