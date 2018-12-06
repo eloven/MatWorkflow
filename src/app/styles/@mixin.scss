@@ -1,0 +1,15 @@
+@mixin min-height {
+    min-height: 800px;
+}
+@mixin primary-card {
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+    background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+}
+@mixin rose-card {
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(244, 67, 54, 0.6);
+    background: linear-gradient(60deg, #ef5350, #d32f2f);
+}
+
+@mixin box-shadow {
+   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
