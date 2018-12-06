@@ -9,7 +9,7 @@
 /node_modules
 
 # ui
-
+/resource
 
 # IDEs and editors
 .vscode
