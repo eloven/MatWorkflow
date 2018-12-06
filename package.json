@@ -11,7 +11,8 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run work7:server:production",
     "compile:server": "webpack --config webpack.server.config.js --progress",
-    "serve:ssr": "node dist/server"
+    "serve:ssr": "node dist/server",
+    "ngxtable": "ng build ngx-table"
   },
   "private": true,
   "dependencies": {

@@ -8,6 +8,9 @@
 # dependencies
 /node_modules
 
+# ui
+
+
 # IDEs and editors
 .vscode
 /.idea
