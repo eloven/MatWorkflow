@@ -1,6 +1,6 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
-import { MatIconRegistry } from '_@angular_material@7.1.1@@angular/material/icon';
+import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.utils';
 

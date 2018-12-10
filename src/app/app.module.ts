@@ -9,10 +9,12 @@ import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { IndexComponent } from './pages/index/index.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        IndexComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

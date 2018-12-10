@@ -34,15 +34,16 @@
     "@nguniversal/module-map-ngfactory-loader": "^v7.0.2",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
+    "domino": "^2.1.1",
+    "express": "^4.15.2",
+    "hammerjs": "^2.0.8",
     "rxjs": "~6.3.3",
-    "web-animations-js": "^2.3.1",
     "ts-loader": "^5.3.1",
     "tslib": "^1.9.0",
-    "express": "^4.15.2",
+    "web-animations-js": "^2.3.1",
+    "whatwg-fetch": "^3.0.0",
     "xhr2": "^0.1.4",
-    "domino": "^2.1.1",
-    "zone.js": "~0.8.26",
-    "whatwg-fetch": "^3.0.0"
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.11.0",
