@@ -1,5 +1,8 @@
 export class Themes {
-    static changeTheme(theme: string) {
+    /**
+     * change theme
+     */
+    static changeTheme(theme: string): void {
         const themesData = {
             default: '',
             pink: 'indigo-pink-theme',

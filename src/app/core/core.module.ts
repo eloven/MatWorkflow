@@ -1,5 +1,8 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
+import { MatIconRegistry } from '_@angular_material@7.1.1@@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { loadSvgResources } from '../utils/svg.utils';
 
 @NgModule({
     declarations: [],
@@ -14,4 +17,15 @@ import { SharedModule } from '../shared/shared.module';
         }
     ]
 })
-export class CoreModule { }
+export class CoreModule {
+    constructor(@Optional() @SkipSelf() parent: CoreModule,
+     // register icons
+     iconRegistry: MatIconRegistry,
+     sanitizer: DomSanitizer) {
+        if (parent) {
+            throw Error('模块已经存在');
+        }
+        // load icons
+        loadSvgResources(iconRegistry, sanitizer);
+    }
+}

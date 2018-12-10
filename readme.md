@@ -8,7 +8,6 @@
 
 ### Folder
 
-    '''
     projects
         ngx-table
     resource
@@ -37,7 +36,7 @@
         app.routing.module
         app.module
         app.server.module
-    '''
+
 
 
 ### How to use browser
@@ -63,6 +62,22 @@
 ### How to build projects with name
 
     1. ng build ngx-table
+
+
+### About Plan
+
+-[x] Framwork
+-[x] Module Build
+-[x] Route Build
+-[x] User Service
+-[x] Http Service And Http Interceptor
+-[x] Use Fetch API
+-[ ] LocalStorage And Session
+-[ ] Filebase Clould
+-[ ] Ngrx And Route-Cache
+-[ ] Animate
+-[ ] Themes
+-[ ] Doc Page
 
 
 ### production
