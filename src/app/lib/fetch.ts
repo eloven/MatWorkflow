@@ -14,7 +14,7 @@ export class Fetch {
      * @param url string
      * @param options json
      */
-    static fetch(url: string, options?: Options) {
+    static fetch(url: string, options?: Options): Promise<any> {
         if (options) {
             return window.fetch(url, options);
         } else {
@@ -23,25 +23,19 @@ export class Fetch {
     }
 
     static fetchHtml(url: string) {
-        window.fetch(url).then(response => {
-            return response.text();
-        }).then((body) => {
-            document.body.innerHTML = body;
+        return window.fetch(url).then(response => {
+            response.text();
         });
     }
 
     static fetchJson(url: string) {
-        window.fetch(url).then(response => {
-            return response.json();
-        }).then(json => {
-            console.log(json);
-        }).catch(err => {
-            console.error(err);
+        return window.fetch(url).then(response => {
+            response.json();
         });
     }
 
     static fetchMetadata(url: string) {
-        window.fetch(url).then(response => {
+        return window.fetch(url).then(response => {
             console.log(response.headers.get('Content-Type'));
             console.log(response.headers.get('Date'));
             console.log(response.status);
@@ -50,29 +44,20 @@ export class Fetch {
     }
 
     static postForm(url: string, data: FormData) {
-        window.fetch(url, {
+        return window.fetch(url, {
             method: 'POST',
             body: data
-        }).then(response => {
-            console.log(response);
         });
     }
 
     static postJson(url: string, data: Object) {
-        try {
-            const _body = JSON.stringify(data);
-            window.fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: _body
-            });
-        } catch (error) {
-            console.error(error);
-            // expected output: SyntaxError: unterminated string literal
-            // Note - error messages will vary depending on browser
-        }
+        return window.fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
     }
 
     static checkStatus(response) {
