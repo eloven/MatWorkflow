@@ -1,0 +1,13 @@
+@import '../../styles/@color.scss';
+div{
+    background: $primary;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    h1{
+        color: #ffffff;
+        padding-left: 100px;
+        font-weight: 300;
+    }
+}
