@@ -66,18 +66,18 @@
 
 ### About Plan
 
-[x] Framwork
-[x] Module Build
-[x] Route Build
-[x] User Service
-[x] Http Service And Http Interceptor
-[x] Use Fetch API
-[ ] LocalStorage And Session
-[ ] Filebase Clould
-[ ] Ngrx And Route-Cache
-[ ] Animate
-[ ] Themes
-[ ] Doc Page
+    [x] Framwork
+    [x] Module Build
+    [x] Route Build
+    [x] User Service
+    [x] Http Service And Http Interceptor
+    [x] Use Fetch API
+    [ ] LocalStorage And Session
+    [ ] Filebase Clould
+    [ ] Ngrx And Route-Cache
+    [ ] Animate
+    [ ] Themes
+    [ ] Doc Page
 
 
 ### production
