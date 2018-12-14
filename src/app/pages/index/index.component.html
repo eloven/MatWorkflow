@@ -1,3 +1,8 @@
-<p>
-  index works!
-</p>
+<h1>测试文字</h1>
+<app-ngx-echarts [option] = "option"></app-ngx-echarts>
+<span class="icon-day"></span>
+<button mat-raised-button (click)="darkTheme('dark')">Basic</button>
+<button mat-raised-button color="primary" (click)="darkTheme('pink')">Primary</button>
+<button mat-raised-button color="accent" (click)="darkTheme('default')">Accent</button>
+<button mat-raised-button color="warn" (click)="darkTheme('kit')">Warn</button>
+<button mat-raised-button disabled>Disabled</button>

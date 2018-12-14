@@ -119,4 +119,4 @@ import {
         NativeDateModule,
     ]
 })
-export class MaterailModule { }
+export class NgxMaterialModule { }

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterailModule } from './materail.module';
+import { NgxMaterialModule } from './ngx-material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NgxEchartsModule } from '../components/ngx-echarts/ngx-echarts.module';
 
 @NgModule({
     declarations: [],
@@ -9,13 +10,15 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
         CommonModule,
         ReactiveFormsModule,
         FormsModule,
-        MaterailModule,
+        NgxMaterialModule,
+        NgxEchartsModule,
     ],
     exports: [
         CommonModule,
         ReactiveFormsModule,
         FormsModule,
-        MaterailModule,
+        NgxMaterialModule,
+        NgxEchartsModule,
     ]
 })
 export class SharedModule { }
