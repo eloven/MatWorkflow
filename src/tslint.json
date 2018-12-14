@@ -14,5 +14,6 @@
             "kebab-case"
         ],
         "no-output-on-prefix": false,
+        "no-unused-variable": true,
     }
 }

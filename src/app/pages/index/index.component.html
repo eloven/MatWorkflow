@@ -1,8 +1,40 @@
-<h1>测试文字</h1>
-<app-ngx-echarts [option] = "option"></app-ngx-echarts>
-<span class="icon-day"></span>
-<button mat-raised-button (click)="darkTheme('dark')">Basic</button>
-<button mat-raised-button color="primary" (click)="darkTheme('pink')">Primary</button>
-<button mat-raised-button color="accent" (click)="darkTheme('default')">Accent</button>
-<button mat-raised-button color="warn" (click)="darkTheme('kit')">Warn</button>
-<button mat-raised-button disabled>Disabled</button>
+<header>
+    <div class="nav">
+        <button mat-button>
+            MatWork
+        </button>
+        <button mat-button [matMenuTriggerFor]="appMenu">
+            Components
+        </button>
+        <mat-menu #appMenu="matMenu">
+            <button mat-menu-item>Editor</button>
+            <button mat-menu-item>Video</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="appService">
+            Service
+        </button>
+        <mat-menu #appService="matMenu">
+            <button mat-menu-item>HttpClient</button>
+            <button mat-menu-item>Storage</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="appPlugins">
+            Plugins
+        </button>
+        <mat-menu #appPlugins="matMenu">
+            <button mat-menu-item>Charts</button>
+            <button mat-menu-item>Table</button>
+        </mat-menu>
+    </div>
+</header>
+<div class="content">
+        <app-router-bar></app-router-bar>
+        <button mat-raised-button (click)="darkTheme('dark')">Basic</button>
+        <button mat-raised-button color="primary" (click)="darkTheme('pink')">Primary</button>
+        <button mat-raised-button color="accent" (click)="darkTheme('default')">Accent</button>
+        <button mat-raised-button color="warn" (click)="darkTheme('kit')">Warn</button>
+        <button mat-raised-button disabled>Disabled</button>
+    <router-outlet></router-outlet>
+</div>
+<footer>
+
+</footer>

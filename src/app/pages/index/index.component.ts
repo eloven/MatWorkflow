@@ -8,14 +8,10 @@ import { EChartInitOption } from 'src/app/components/ngx-echarts/interface';
     styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
-    initOptions: EChartInitOption = {
-        devicePixelRatio: 1,
-        width: 1000,
-        height: 1000,
-    };
+
     option = {
         title: {
-          text: 'ECharts 入门示例'
+          text: 'ECharts 示例'
         },
         tooltip: {},
         legend: {
