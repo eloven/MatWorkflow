@@ -43,6 +43,7 @@ import {
     NativeDateModule,
 
 } from '@angular/material';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 @NgModule({
     imports: [
         MatAutocompleteModule,
@@ -80,6 +81,7 @@ import {
         MatSortModule,
         MatTableModule,
         NativeDateModule,
+        DragDropModule,
     ],
     exports: [
         MatAutocompleteModule,
@@ -117,6 +119,7 @@ import {
         MatSortModule,
         MatTableModule,
         NativeDateModule,
+        DragDropModule,
     ]
 })
 export class NgxMaterialModule { }
