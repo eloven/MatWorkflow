@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-interface Options {
+export interface FetchOptions {
     method: string;
     body: any;
     headers?: any;
@@ -14,7 +14,7 @@ export class Fetch {
      * @param url string
      * @param options json
      */
-    static fetch(url: string, options?: Options): Promise<any> {
+    static fetch(url: string, options?: FetchOptions): Promise<any> {
         if (options) {
             return window.fetch(url, options);
         } else {
