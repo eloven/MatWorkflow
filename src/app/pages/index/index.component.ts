@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Themes } from 'src/app/config/theme.config';
-import { EChartInitOption } from 'src/app/components/ngx-echarts/interface';
+import { RouterBarData } from '../router-bar/router-bar.component';
 
 @Component({
     selector: 'app-index',
@@ -9,27 +9,14 @@ import { EChartInitOption } from 'src/app/components/ngx-echarts/interface';
 })
 export class IndexComponent implements OnInit {
 
-    option = {
-        title: {
-          text: 'ECharts 示例'
-        },
-        tooltip: {},
-        legend: {
-          data: ['销量']
-        },
-        xAxis: {
-          data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
-        },
-        yAxis: {},
-        series: [{
-          name: '销量',
-          type: 'bar',
-          data: [5, 20, 36, 10, 10, 20]
-        }]
-      };
+    routerBar: RouterBarData;
     constructor() { }
 
     ngOnInit() {
+        this.routerBar = {
+            title: 'Mat Work',
+            subTitle: 'Angular Workflow Beautiful with!',
+        }
     }
     darkTheme(t: string) {
         Themes.changeTheme(t);

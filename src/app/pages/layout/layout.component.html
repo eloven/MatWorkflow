@@ -1,0 +1,24 @@
+<header>
+    <div class="nav">
+        <button mat-button [routerLink]="['/index']" routerLinkActive="router-link-active">
+            MatWork
+        </button>
+        <button mat-button [routerLink]="['/components']" routerLinkActive="router-link-active" >
+            Components
+        </button>
+        <button mat-button [routerLink]="['/schematic']" routerLinkActive="router-link-active" >
+            Schematic
+        </button>
+        <button mat-button [routerLink]="['/service']" routerLinkActive="router-link-active">
+            Service
+        </button>
+        <button mat-button [routerLink]="['/plugin']" routerLinkActive="router-link-active">
+            Plugins
+        </button>
+    </div>
+</header>
+<div class="content">
+    <ng-content></ng-content>
+</div>
+<footer>
+</footer>

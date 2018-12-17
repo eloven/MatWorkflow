@@ -7,6 +7,8 @@ import { HomeNavComponent } from './home-nav/home-nav.component';
 import { HomeTableComponent } from './home-table/home-table.component';
 import { HomeTreeComponent } from './home-tree/home-tree.component';
 import { NgxMaterialModule } from '../shared/ngx-material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SchematicRoutingModule } from './schematic.routing.module';
 
 @NgModule({
   declarations: [
@@ -19,15 +21,11 @@ import { NgxMaterialModule } from '../shared/ngx-material.module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgxMaterialModule,
+    SchematicRoutingModule,
   ],
-  exports: [
-    FormsComponent,
-    HomeDashComponent,
-    HomeDragDropComponent,
-    HomeNavComponent,
-    HomeTableComponent,
-    HomeTreeComponent,
-  ]
+  exports: []
 })
 export class SchematicModule { }
