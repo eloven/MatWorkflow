@@ -15,7 +15,7 @@ export class IndexComponent implements OnInit {
     ngOnInit() {
         this.routerBar = {
             title: 'Mat Work',
-            subTitle: 'Angular Workflow Beautiful with!',
+            subTitle: 'Angular Workflow Beautiful !',
         }
     }
     darkTheme(t: string) {

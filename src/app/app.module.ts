@@ -16,17 +16,21 @@ import { PluginPageComponent } from './pages/plugin-page/plugin-page.component';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { RouterBarComponent } from './pages/router-bar/router-bar.component';
+import { SideBarComponent } from './pages/side-bar/side-bar.component';
+import { HomeNavComponent } from './pages/home-nav/home-nav.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         IndexComponent,
+        HomeNavComponent,
         SchematicPageComponent,
         ServicePageComponent,
         PluginPageComponent,
         ComponentsPageComponent,
         LayoutComponent,
         RouterBarComponent,
+        SideBarComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

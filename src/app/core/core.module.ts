@@ -11,9 +11,7 @@ import { loadSvgResources } from '../utils/svg.utils';
     ],
     providers: [
         {
-            provide: 'BASE_API', useValue: {
-                host: 'http: 127.0.0.1:3000/api/'
-            }
+            provide: 'BASE_API', useValue:  'http: 127.0.0.1:3000/api/'
         }
     ]
 })

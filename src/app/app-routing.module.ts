@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { IndexComponent } from './pages/index/index.component';
 import { SchematicPageComponent } from './pages/schematic-page/schematic-page.component';
 import { PluginPageComponent } from './pages/plugin-page/plugin-page.component';
@@ -18,7 +18,7 @@ const routes: Routes = [
 
     ]},
     {path: 'plugin', component: PluginPageComponent, children: [
-
+        {path: '', loadChildren: './plugin/plugin.module#PluginModule'},
     ]},
     {path: 'schematic', component: SchematicPageComponent, children: [
         {path: '', loadChildren: './schematic/schematic.module#SchematicModule'}
@@ -27,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

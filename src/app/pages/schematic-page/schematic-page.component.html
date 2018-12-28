@@ -1,8 +1,9 @@
 <app-layout>
     <app-router-bar [routerBar]="routerBar"></app-router-bar>
-    <router-outlet></router-outlet>
-</app-layout>
-<app-layout>
-    <app-router-bar [routerBar]="routerBar"></app-router-bar>
-    <router-outlet></router-outlet>
+    <div class="main-route">
+        <div class="main-left">
+            <app-side-bar [sideNavData]="schematicSideNavData"></app-side-bar>
+        </div>
+        <div class="main-right"><router-outlet></router-outlet></div>
+    </div>
 </app-layout>

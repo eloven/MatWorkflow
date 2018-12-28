@@ -1,0 +1,11 @@
+<div class="side-bar-hooks">
+    <mat-list>
+        <div *ngFor="let item of sideNavData">
+            <h2 mat-subheader>{{item.title}}</h2>
+            <mat-list-item *ngFor="let sub of item.subList">
+                <h4 class="nav-hooks" mat-line routerLink="/{{sub.route}}" routerLinkActive="">{{sub.name}}</h4>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-list>
+</div>
