@@ -1,3 +1,4 @@
+#!/bin/bash
 # start
 ps -ef|grep nginx
 

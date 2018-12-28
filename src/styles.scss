@@ -5,6 +5,9 @@
 // @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "./theme.scss";
 
+// handson table css
+@import '~handsontable/dist/handsontable.full.css';
+
 html, body {
     padding: 0;
     margin: 0;
@@ -24,3 +27,24 @@ html, body {
 }
 .clearfix:after {clear: both;}
 .clearfix {zoom: 1;} /* IE < 8 */
+
+/*
+main 页面布局
+*/
+div .main-route {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    .main-left {
+        width: 240px;
+        margin: 25px;
+        max-height: 75vh;
+        overflow: auto;
+    }
+    .main-right {
+        flex: 1;
+        overflow: auto;
+    }
+}
+
+
