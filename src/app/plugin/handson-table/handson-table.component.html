@@ -1,11 +1,14 @@
-
 <div class="page-hooks">
-    <p>
-    handson-table works!
-    </p>
-    <hot-table class="table-hooks" [data]="dataset" [colHeaders]="true" [rowHeaders]="true">
-        <hot-column data="id" [readOnly]="true" title="ID"></hot-column>
-        <hot-column data="name" title="Full name"></hot-column>
-        <hot-column data="address" title="Street name"></hot-column>
+    <h3>可编辑表格</h3>
+    <div style="margin: 15px 0">
+        <button mat-raised-button color="primary">下载表格</button>
+    </div>
+    <hot-table class="table-hooks" [data]="dataset" [colHeaders]="true" [rowHeaders]="true" [contextMenu]="true">
+      <hot-column data="id" [readOnly]="true" title="ID"></hot-column>
+      <hot-column data="username" [readOnly]="true" title="姓名"></hot-column>
+      <hot-column data="age" title="年龄"></hot-column>
+      <hot-column data="sex" title="性别"></hot-column>
+      <hot-column data="name" title="地址"></hot-column>
+      <hot-column data="address" title="街道"></hot-column>
     </hot-table>
 </div>

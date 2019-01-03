@@ -18,6 +18,9 @@ import { LayoutComponent } from './pages/layout/layout.component';
 import { RouterBarComponent } from './pages/router-bar/router-bar.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
 import { HomeNavComponent } from './pages/home-nav/home-nav.component';
+import { DashPageComponent } from './components/dash-page/dash-page.component';
+import { UiPageComponent } from './components/ui-page/ui-page.component';
+import { HttpPageComponent } from './components/http-page/http-page.component';
 
 @NgModule({
     declarations: [
@@ -31,6 +34,9 @@ import { HomeNavComponent } from './pages/home-nav/home-nav.component';
         LayoutComponent,
         RouterBarComponent,
         SideBarComponent,
+        DashPageComponent,
+        HttpPageComponent,
+        UiPageComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -4,6 +4,7 @@ import { AgGirdComponent } from './ag-gird/ag-gird.component';
 import { HandsonTableComponent } from './handson-table/handson-table.component';
 import { PluginRoutingModule } from './plugin.routing.module';
 import { HotTableModule } from '@handsontable/angular';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -12,6 +13,7 @@ import { HotTableModule } from '@handsontable/angular';
     imports: [
         CommonModule,
         PluginRoutingModule,
+        SharedModule,
         HotTableModule.forRoot()
     ]
 })

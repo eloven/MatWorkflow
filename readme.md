@@ -1,6 +1,6 @@
-# Work7
+# MatWorkFlow
 
-> best prictice for angualr
+> best for angular
 
 ### MatWorkFlow For Angular ^7.1.0
 
@@ -9,28 +9,22 @@
 ### Folder
 
     projects
-        ngx-table
+        ngx-table             -- 开发项目依赖包
     resource
-        icon-icomoon
+        icon-icomoon          -- 项目依赖资源
     src
         app
-            api
             componnents
             config
-            controllers
             core
-            database
-            functions
             lib
             models
             ngrx
             pages
+            schematic         -- cli 生成组件
             service
-            settings
             shared
             styles
-            test
-            tools
             utils
         app.component
         app.routing.module
