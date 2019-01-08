@@ -7,10 +7,10 @@ Best Angular
     material2 + angular7 + pwa + ssr + ngrx + websql + storage
 
 ### quick components
-[![MatWorkFlow](https://github.com/guobin211/MatWorkflow/blob/master/images/shcematic.jpg)](https://github.com/guobin211/MatWorkflow)
+[![MatWorkFlow](https://github.com/guobin211/MatWorkflow/blob/work7/images/shematic.jpg)](https://github.com/guobin211/MatWorkflow)
 
 ### quick plugin
-[![MatWorkFlow](https://github.com/guobin211/MatWorkflow/blob/master/images/plugin.jpg)](https://github.com/guobin211/MatWorkflow)
+[![MatWorkFlow](https://github.com/guobin211/MatWorkflow/blob/work7/images/plugin.jpg)](https://github.com/guobin211/MatWorkflow)
 
 ### Folder
 
