@@ -1,17 +1,24 @@
 # MatWorkFlow
 
-> best for angular
+Best Angular
 
 ### MatWorkFlow For Angular ^7.1.0
 
     material2 + angular7 + pwa + ssr + ngrx + websql + storage
 
+### quick components
+[![MatWorkFlow](https://github.com/guobin211/MatWorkflow/blob/master/images/shcematic.jpg)](https://github.com/guobin211/MatWorkflow)
+
+### quick plugin
+[![MatWorkFlow](https://github.com/guobin211/MatWorkflow/blob/master/images/plugin.jpg)](https://github.com/guobin211/MatWorkflow)
+
 ### Folder
 
+    server.ts                 -- nodejs server
     projects
-        ngx-table             -- 开发项目依赖包
+        ngx-table             -- ngx lib
     resource
-        icon-icomoon          -- 项目依赖资源
+        icon-icomoon          -- static assets
     src
         app
             componnents
@@ -21,7 +28,7 @@
             models
             ngrx
             pages
-            schematic         -- cli 生成组件
+            schematic
             service
             shared
             styles
@@ -30,8 +37,6 @@
         app.routing.module
         app.module
         app.server.module
-
-
 
 ### How to use browser
 
@@ -61,21 +66,18 @@
 ### About Plan
 
     [x] Framwork
-    [x] Module Build
-    [x] Route Build
-    [x] User Service
+    [x] Route Module
+    [x] Use Service
     [x] Http Service And Http Interceptor
     [x] Use Fetch API
-    [ ] LocalStorage And Session
-    [ ] Filebase Clould
+    [x] LocalStorage And Session
+    [x] Filebase Clould
+    [x] Animate
     [ ] Ngrx And Route-Cache
-    [ ] Animate
-    [ ] Themes
-    [ ] Doc Page
+    
 
 
 ### production
-
 ##### You need PM2 Manage node-app
 [PM2](https://pm2.io/doc/en/runtime/guide/installation/)
 
