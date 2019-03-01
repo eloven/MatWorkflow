@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'lib-ngx-table',
-    template: `
-    <p>
-      ngx-table works!
-    </p>
-  `,
-    styles: []
+    templateUrl: './index.html',
+    styleUrls: ['./index.scss'],
 })
 export class NgxTableComponent implements OnInit {
 
